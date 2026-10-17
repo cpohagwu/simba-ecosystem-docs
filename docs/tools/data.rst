@@ -8,8 +8,12 @@ A contract names a table's columns, their units, which may be blank and what a
 blank means, the row key, and when a row becomes known. ``Contract.validate``
 reports every problem rather than stopping at the first.
 
+The availability lags below are defaults. Where a source reports later,
+``contract.with_availability_lag(days)`` returns the contract with that
+source's lag; a snapshot's manifest records the lag each table used.
+
 =====================  =====================================================  ===========================
-Contract               Columns                                                A row dated d is known from
+Contract               Columns                                                Known from (default)
 =====================  =====================================================  ===========================
 ``RIBBON_LEDGER``      tag, date, bagged, cut, age_at_cut [, field_losses,    d + 7 days (end of week)
                        rejected, processed]

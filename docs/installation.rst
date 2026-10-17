@@ -5,6 +5,10 @@ py-simba-pop-tools needs Python 3.11-3.13 and installs
 `py-simba-pop <https://pypi.org/project/py-simba-pop/>`_ (0.4.x), numpy,
 pandas and scipy.
 
+Releases are compiled wheels for CPython 3.11-3.13 on Windows, macOS and
+Linux, with type stubs (``py.typed``) for editors and type checkers. There is
+no source distribution.
+
 .. note::
 
    The package is not on PyPI yet; these docs describe the development version.
