@@ -9,9 +9,9 @@ Releases are compiled wheels for CPython 3.11-3.13 on Windows, macOS and
 Linux, with type stubs (``py.typed``) for editors and type checkers. There is
 no source distribution.
 
-.. note::
+.. code-block:: bash
 
-   The package is not on PyPI yet; these docs describe the development version.
+   python -m pip install py-simba-pop-tools
 
 The examples read the synthetic farms from a clone of
 `py-simba-pop-docs <https://github.com/cpohagwu/py-simba-pop-docs>`_:
