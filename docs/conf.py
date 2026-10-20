@@ -1,9 +1,9 @@
-"""Sphinx configuration for the SIMBA ecosystem documentation."""
+"""Sphinx configuration for the py-simba-pop-tools documentation."""
 
-project = "SIMBA ecosystem"
+project = "py-simba-pop-tools"
 copyright = "2026, Collins Patrick Ohagwu"
 author = "Collins Patrick Ohagwu"
-release = "0.1.0.dev0"  # py-simba-pop-tools
+release = "0.1.0"  # py-simba-pop-tools; must equal its __version__ (checked by simba-ecosystem CI)
 version = "0.1"
 
 extensions = ["sphinx.ext.duration"]

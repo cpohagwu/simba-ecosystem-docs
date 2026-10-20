@@ -1,17 +1,23 @@
-SIMBA ecosystem
-===============
+py-simba-pop-tools
+==================
 
-Packages that work alongside `py-simba-pop <https://py-simba-pop.readthedocs.io>`_,
-the Python implementation of the SIMBA-POP banana cohort model:
+Calibration, validation and backtesting tools for
+`py-simba-pop <https://py-simba-pop.readthedocs.io>`_, the Python
+implementation of the SIMBA-POP banana cohort model:
 
-* **py-simba-pop-tools** -- calibration, validation and backtesting for
-  py-simba-pop: a life-table estimate of the harvest parameters, agreement
-  scores for simulated series, data contracts, as-of snapshots for backtests,
-  and initial-population reconstruction.
+* **calibration** -- harvest timing from ribbon-tagged records (a life table,
+  and a maximum-likelihood fit with field losses competing), the field-loss
+  rate, and flowering and follower-selection timing, with bootstraps for
+  their uncertainty;
+* **evaluation** -- rolling-origin backtests on as-of data, with
+  persistence, seasonal-naive and Mode B baselines and a calibrated Mode B,
+  scored by horizon and compared with a Diebold-Mariano test;
+* **data** -- the canonical tables' contracts, as-of snapshots and
+  initial-population reconstruction.
 
-.. note::
+.. code-block:: bash
 
-   py-simba-pop-tools is in development (0.1.0.dev0) and not yet on PyPI.
+   python -m pip install py-simba-pop-tools
 
 Every example uses the synthetic farms of
 `py-simba-pop-docs <https://github.com/cpohagwu/py-simba-pop-docs/tree/main/docs/examples/data>`_
